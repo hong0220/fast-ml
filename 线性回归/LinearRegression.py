@@ -1,10 +1,12 @@
 # -*- coding: UTF-8 -*-
 
 from sklearn.linear_model import LinearRegression
+
 # from sklearn import linear_model
 
-X = [[10.0], [8.0], [13.0], [9.0], [11.0], [14.0], [6.0], [4.0], [12.0], [7.0], [5.0]]
-y = [8.04, 6.95, 7.58, 8.81, 8.33, 9.96, 7.24, 4.26, 10.84, 4.82, 5.68]
+# 两个特征
+X = [[5, 2], [2, 5], [3, 9]]
+y = [0, 1, 2]
 
 model = LinearRegression()
 model.fit(X, y)
@@ -14,6 +16,6 @@ print(model.intercept_)
 # 斜率
 print(model.coef_)
 
-# 对x=0, x=1的预测结果
-y_pred = model.predict([[0], [1]])
+# 预测
+y_pred = model.predict([[1, 1], [3, 3]])
 print(y_pred)

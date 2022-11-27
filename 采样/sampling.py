@@ -19,7 +19,8 @@ def RepetitionRandomSampling(dataMat, number):
     return sample
 
 
-# 系统抽样(等距抽样)，无放回抽样，适用于按照一定关系排列好的数据，照顾每个小分类的数据。
+# 系统抽样(等距抽样)，无放回抽样
+# 适用于按照一定关系排列好的数据，照顾每个小分类的样本数据。
 def SystematicSampling(dataMat, number):
     sample = []
     i = 0
