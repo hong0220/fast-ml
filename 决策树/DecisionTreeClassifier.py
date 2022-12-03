@@ -5,6 +5,7 @@ from sklearn import tree
 # gini or entropy (information gain)
 model = tree.DecisionTreeClassifier(criterion='gini')
 
+# todo
 model.fit(X, y)
 model.score(X, y)
 

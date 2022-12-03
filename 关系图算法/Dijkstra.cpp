@@ -19,11 +19,13 @@ void Dijkstra()
 {
     for (int i = 1; i <= n; i++)
         dis[i] = map[s][i];
-
     vis[s] = 1;
     dis[s] = 0;
+
+    // 枚举每个点
     for (int i = 1; i < n; i++)
     {
+        // 找最短距离
         int min = 0x7f7f7f7f;
         int pos;
         for (int j = 1; j <= n; j++)
@@ -39,6 +41,7 @@ void Dijkstra()
 
         vis[pos] = 1;
 
+        // 扩展最短点
         for (int j = 1; j <= n; j++)
             dis[j] = MIN(dis[j], map[pos][j] + dis[pos]);
     }

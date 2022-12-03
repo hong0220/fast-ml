@@ -26,6 +26,7 @@ def plotBestFit(weights):
     ax.scatter(xCord1, yCord1, s=30, c='red', marker='s')
     ax.scatter(xCord2, yCord2, s=30, c='green')
 
+    # todo
     x = arange(-3.0, 3.0, 0.1)
     # y = (0.48 * x + 4.12414) / (-0.616)
     # y = (weights[0] + weights[1] * x) / (-weights[2])
