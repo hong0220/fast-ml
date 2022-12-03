@@ -41,7 +41,7 @@ def plotBestFit(weights):
 def loadDataSet():
     dataMat = []
     labelMat = []
-    file = open('/Users/hongduoduo/Desktop/fast-ml/DataSet/testSet-LR.txt')
+    file = open('/Users/hongduoduo/Desktop/fast-ml/DataSet/LogisticRegression.txt')
     for line in file.readlines():
         lineArray = line.strip().split()
         dataMat.append([1.0, float(lineArray[0]), float(lineArray[1])])
