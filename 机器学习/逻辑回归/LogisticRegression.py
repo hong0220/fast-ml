@@ -60,7 +60,7 @@ def gradAscent(dataMatIn, classLabels):
     labelMat = mat(classLabels).transpose()
 
     m, n = shape(dataMatrix)
-    # 每次迭代的步长
+    # 学习率，每次迭代的步长
     alpha = 0.001
     weights = ones((n, 1))
 
