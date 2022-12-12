@@ -12,7 +12,8 @@ X = data.images.reshape(len(data.images), -1)
 y = data.target
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
-model = MLPClassifier(hidden_layer_sizes=(16,))
+# 设置迭代500次,达到最佳拟合
+model = MLPClassifier(hidden_layer_sizes=(16,), max_iter=500)
 
 # 训练
 model.fit(X_train, y_train)
